@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula DOM</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="conversor">
+        <div class="titulo">
+            <h1> Conversor de Dolár </h1>
+        </div>
+
+        <div class="inputdiv">
+            <input type="number" placeholder="Valor em reais">
+        </div>
+        <h1 style="position: absolute;">Escolha a moeda pra qual queira converter </h1>
+        <div class="buttons">
+            <div class="button-item">
+                <img style="max-width: 60px;" src="/assets/dollar.jpg" alt="EUA" class="flag">
+                <button onclick="converterParaDolar()" id="doll">USD (DÓLAR)</button>
+            </div>
+            <div class="button-item">
+                <img style="max-width: 60px;" src="/assets/euroR.png" alt="EU" class="flag">
+                <button onclick="converterParaEuro()" id="euro">EUR (EURO)</button>
+            </div>
+            <div class="button-item">
+                <img style="max-width: 60px;" src="/assets/japao.webp" alt="Japão" class="flag">
+                <button onclick="converterParaIene()" id="iene">IENE (JPY)</button>
+            </div>
+            <div class="button-item">
+                <img style="max-width: 60px;" src="/assets/reino.png" alt="Reino Unido" class="flag">
+                <button onclick="converterParaLibra()" id="libra">LIBRA (GBP)</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>
