@@ -9,16 +9,19 @@
 </head>
 
 <body>
-
+    <video autoplay muted loop id="background-video">
+        <source src="/assets/fundo.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
     <div class="conversor">
         <div class="titulo">
-            <h1> Conversor de Dolár </h1>
+            <h1> Conversor</h1>
         </div>
 
         <div class="inputdiv">
             <input type="number" placeholder="Valor em reais">
         </div>
-        <h1 style="position: absolute;">Escolha a moeda pra qual queira converter </h1>
+        <h1 class="escolha">Escolha a moeda pra qual queira converter </h1>
         <div class="buttons">
             <div class="button-item">
                 <img style="max-width: 60px;" src="/assets/dollar.jpg" alt="EUA" class="flag">
