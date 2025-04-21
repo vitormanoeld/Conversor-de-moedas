@@ -130,3 +130,67 @@ button {
 input:focus {
     outline: none;
 }
+
+.victor-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    top: 20%;
+    left: 37%;
+    min-height: 40vh;
+}
+
+.victor-moeda {
+    width: 450px;
+    height: 550px;
+    padding: 20px;
+    background-image: linear-gradient(135deg, #3c3b6e, #b22234);
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+}
+
+.victor-imagem {
+    width: 230px;
+    height: 130px;
+    object-fit: cover;
+    margin: 30px auto;
+}
+
+.victor-nome-moeda {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 10px 0;
+    margin-top: -100px;
+}
+
+#victor-valor {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 5px 0;
+}
+
+#victor-valor-con {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 5px 0;
+}
+
+.victor-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
