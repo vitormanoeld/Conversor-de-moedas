@@ -13,13 +13,16 @@
         <source src="/assets/fundo.mp4" type="video/mp4">
         Seu navegador não suporta o elemento de vídeo.
     </video>
-    <div class="victor-container">
+    <div id="testeDolar" class="victor-container">
+        <span onclick="fecharModalDolar()" id="botaoFechar">×</span>
+
         <div class="victor-overlay"></div>
         <div id="moedaDolar" class="victor-moeda">
+
             <img src="/assets/dollar.jpg" alt="Bandeira dos EUA" class="victor-imagem">
             <h1 class="victor-nome-moeda">Dólar 💵</h1>
+            <p id="victor-valor-con">O valor que você digitou convertido para dólar é :</p>
             <p id="victor-valor"></p>
-            <p id="victor-valor-con">Valor de Venda: R$ 5,30</p>
         </div>
     </div>
 
@@ -35,7 +38,7 @@
         <div class="buttons">
             <div class="button-item">
                 <img style="max-width: 60px;" src="/assets/dollar.jpg" alt="EUA" class="flag">
-                <button onclick="converterParaDolar()" id="doll">USD (DÓLAR)</button>
+                <button onclick="testeDolar()" id="doll">USD (DÓLAR)</button>
             </div>
             <div class="button-item">
                 <img style="max-width: 60px;" src="/assets/euroR.png" alt="EU" class="flag">

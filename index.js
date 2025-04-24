@@ -3,13 +3,13 @@ const escolhaDolar = document.getElementById("doll");
 const escolhaEuro = document.getElementById("euro");
 const escolhaIene = document.getElementById("iene");
 const escolhaLibra = document.getElementById("libra");
-let moedaDolar = document.getElementById('moedaDolar');
+const moedaDolar = document.getElementById("testeDolar");
 const pDolar = document.getElementById('victor-valor');
 
-function converterParaDolar() {
+function testeDolar() {
     const valorConversao = valorReal.value / 5.80
     moedaDolar.style.display = "block";
-    pDolar.textContent = valorConversao;
+    pDolar.textContent = valorConversao.toFixed(2);
 }
 
 function converterParaEuro() {
@@ -25,4 +25,8 @@ function converterParaIene() {
 function converterParaLibra() {
     const valorConversao = valorReal.value / 6.62
     alert("£" + valorConversao.toFixed(2))
+}
+
+function fecharModalDolar() {
+    moedaDolar.style.display = "none"
 }
